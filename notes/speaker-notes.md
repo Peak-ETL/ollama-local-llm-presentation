@@ -66,19 +66,7 @@ Ollama exposes an OpenAI-compatible-ish REST API on localhost:11434. The VS Code
 
 `first-impressions`
 
-Set up the mystery here before revealing the cause on the next two slides: it's very likely Qwen3's default "thinking" mode, not the model itself being slower per-token. The bars are schematic — the point is that the wait is front-loaded, before any visible output.
-
-## 12. The Likely Culprit
-
-`thinking-issue`
-
-This matches what I found in Ollama's own tracker: thinking is a per-request or per-Modelfile setting, not something the VS Code extension currently exposes as a toggle. The sample is illustrative — point at the pink block and note that in an editor you often do not even see it, you just wait.
-
-## 13. Three Ways To Turn It Off
-
-`thinking-fix`
-
-The Modelfile route is the one that scales to a team — everyone points at the same variant instead of each person remembering a flag. Options 1 and 2 are fine for trying it out or for a script.
+Set up the latency comparison here before moving into the benchmark details. The bars are schematic — the point is that the wait is front-loaded, before any visible output.
 
 ## 14. Beyond First Impressions
 
@@ -108,7 +96,7 @@ Deliberately no dollar figures — the chart has no axis numbers on purpose. Pul
 
 `demo`
 
-Terminal first on purpose: same prompt, same machine, one flag between the two runs — no editor, extension settings or network in the way, so the comparison is honest and the --nothink toggle is obvious. Watch the gap before the first token; that is the argument from a few slides ago, live. If a model is slow to load, talk over it — that wait is itself the point. Fallback if the demo breaks: the screenshots on the setup slide. VS Code comes after this, once the difference is clear.
+Terminal first on purpose: same prompt, same machine, and no editor, extension settings or network in the way. Watch the gap before the first token and compare the shape of each answer. If a model is slow to load, talk over it — that wait is itself the point. Fallback if the demo breaks: the screenshots on the setup slide. VS Code comes after this, once the difference is clear.
 
 ## 19. Now In VS Code
 

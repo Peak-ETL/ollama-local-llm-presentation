@@ -1,9 +1,0 @@
-# A Qwen variant with thinking mode off by default.
-#
-#   ollama create qwen3-fast -f Modelfile.qwen3-fast
-#   ollama run qwen3-fast
-#
-# Point the VS Code connector at qwen3-fast and nobody has to remember a flag.
-
-FROM qwen3:14b
-PARAMETER nothink true

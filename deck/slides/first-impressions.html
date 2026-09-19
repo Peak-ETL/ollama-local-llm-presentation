@@ -22,7 +22,7 @@
     <div style="display:flex; flex-direction:row; gap:24px; align-items:center">
       <div style="width:320px; display:flex; flex-direction:column; gap:2px">
         <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:23px; font-weight:600; color:#1a1a1a">Qwen</p>
-        <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:17px; color:#8a8f94">thinking on by default</p>
+        <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:17px; color:#8a8f94">reasoning response</p>
       </div>
       <div style="display:flex; flex-direction:row; gap:4px; align-items:center">
         <div style="width:700px; height:62px; display:flex; flex-direction:row; align-items:center; padding:0 20px; background:#e62e8b; border-radius:6px 0 0 6px">
@@ -39,7 +39,7 @@
       <x-shape kind="ellipse" style="width:44px; height:44px; background:#8257db"></x-shape>
       <x-icon name="Lightbulb" style="position:absolute; top:11px; left:11px; width:22px; height:22px; color:#ffffff"></x-icon>
     </div>
-    <p style="width:1450px; font-family:'Nunito Sans', Arial, sans-serif; font-size:22px; line-height:1.4; color:#1a1a1a">This is mostly about how the two models work, not raw speed: <b>Qwen ships with "thinking" mode on by default</b>, so it writes a reasoning block before the first visible token. Gemma 4 doesn't, so it feels faster even when throughput is comparable.</p>
+    <p style="width:1450px; font-family:'Nunito Sans', Arial, sans-serif; font-size:22px; line-height:1.4; color:#1a1a1a">This is mostly about how the two models work, not raw speed: <b>Qwen writes a reasoning block before the first visible token</b>. Gemma 4 does not, so it feels faster even when throughput is comparable.</p>
   </div>
-  <aside>Set up the mystery here before revealing the cause on the next two slides: it's very likely Qwen3's default "thinking" mode, not the model itself being slower per-token. The bars are schematic — the point is that the wait is front-loaded, before any visible output.</aside>
+  <aside>Set up the mystery here before comparing the models in more detail. The bars are schematic — the point is that the wait is front-loaded, before any visible output.</aside>
 </section>

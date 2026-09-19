@@ -32,8 +32,6 @@
     "setup-recap",
     "vscode-integration",
     "first-impressions",
-    "thinking-issue",
-    "thinking-fix",
     "benchmarks",
     "hardware",
     "recommendations",
@@ -50,7 +48,7 @@
       "start": "benchmarks"
     },
     "s-eval": {
-      "description": "Gemma 4 vs Qwen, and fixing the thinking-mode latency gotcha",
+      "description": "Gemma 4 vs Qwen, and comparing their latency in practice",
       "start": "first-impressions"
     },
     "s-setup": {

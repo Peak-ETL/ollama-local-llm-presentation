@@ -20,16 +20,6 @@
           <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:20px; color:#55595e">Nothing in the way but the model itself</p>
         </div>
       </div>
-      <div style="display:flex; flex-direction:row; gap:20px; align-items:center; flex:1; padding:20px 28px; background:#fdeff6; border-left:5px solid #e62e8b; border-radius:12px">
-        <div style="position:relative; width:58px; height:58px; display:flex; flex-direction:column; align-self:stretch">
-          <x-shape kind="ellipse" style="width:58px; height:58px; background:#e62e8b"></x-shape>
-          <x-icon name="Clock" style="position:absolute; top:15px; left:15px; width:28px; height:28px; color:#ffffff"></x-icon>
-        </div>
-        <div style="display:flex; flex-direction:column; gap:3px">
-          <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:27px; font-weight:600; color:#1a1a1a">Qwen with and without --nothink</h3>
-          <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:20px; color:#55595e">The latency gap, isolated to one flag</p>
-        </div>
-      </div>
       <div style="display:flex; flex-direction:row; gap:20px; align-items:center; flex:1; padding:20px 28px; background:#f7f8f9; border-left:5px solid #8a8f94; border-radius:12px">
         <div style="position:relative; width:58px; height:58px; display:flex; flex-direction:column; align-self:stretch">
           <x-shape kind="ellipse" style="width:58px; height:58px; background:#8a8f94"></x-shape>
@@ -48,12 +38,8 @@
         <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:21px; color:#7fe0a3">$ ollama run gemma4:12b</p>
       </div>
       <div style="display:flex; flex-direction:column; gap:2px">
-        <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:17px; color:#6a7179"># thinking on by default</p>
+        <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:17px; color:#6a7179"># the comparison model</p>
         <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:21px; color:#7fe0a3">$ ollama run qwen3:14b</p>
-      </div>
-      <div style="display:flex; flex-direction:column; gap:2px">
-        <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:17px; color:#6a7179"># same prompt, one flag different</p>
-        <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:21px; color:#7fe0a3">$ ollama run qwen3:14b --nothink</p>
       </div>
       <div style="display:flex; flex-direction:column; gap:2px">
         <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:17px; color:#6a7179"># what's resident, and for how long</p>
@@ -61,5 +47,5 @@
       </div>
     </div>
   </div>
-  <aside>Terminal first on purpose: same prompt, same machine, one flag between the two runs — no editor, extension settings or network in the way, so the comparison is honest and the --nothink toggle is obvious. Watch the gap before the first token; that is the argument from a few slides ago, live. If a model is slow to load, talk over it — that wait is itself the point. Fallback if the demo breaks: the screenshots on the setup slide. VS Code comes after this, once the difference is clear.</aside>
+  <aside>Terminal first on purpose: same prompt, same machine, and no editor, extension settings or network in the way. Watch the gap before the first token and compare the shape of each answer. If a model is slow to load, talk over it — that wait is itself the point. Fallback if the demo breaks: the screenshots on the setup slide. VS Code comes after this, once the difference is clear.</aside>
 </section>

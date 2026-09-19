@@ -15,7 +15,7 @@ Roughly a one-hour session for a developer audience:
 - What Ollama actually is, and where it sits relative to llama.cpp and your hardware
 - Why you might run models locally — token cost, data privacy — and the honest tradeoffs
 - A working setup: Ollama + the VS Code connector, and the models pulled so far
-- Gemma 4 vs Qwen: the perceived latency gap, and why "thinking" mode explains most of it
+- Gemma 4 vs Qwen: the perceived latency gap and how their response patterns differ
 - Hardware reality: what each VRAM tier can actually hold
 - Live demo, first in the terminal and then in VS Code
 - Rough edges worth knowing before wiring this into a daily workflow
@@ -33,7 +33,6 @@ deck/
   assets/ASSET-MAP.md  maps slide blob references to files
 demo/
   hello_world.py     the VS Code demo target
-  Modelfile.qwen3-fast  a no-thinking Qwen variant
   run-demo.sh        the terminal run of show
 notes/
   speaker-notes.md   presenter notes for every slide, in order
@@ -52,17 +51,15 @@ notes/
 9. **Where I Am Today** — `deck/slides/setup-recap.html`
 10. **How It Connects** — `deck/slides/vscode-integration.html`
 11. **First Impressions** — `deck/slides/first-impressions.html`
-12. **The Likely Culprit** — `deck/slides/thinking-issue.html`
-13. **Three Ways To Turn It Off** — `deck/slides/thinking-fix.html`
-14. **Beyond First Impressions** — `deck/slides/benchmarks.html`
-15. **Before You Pull a Model** — `deck/slides/hardware.html`
-16. **Picking a Model By Task** — `deck/slides/recommendations.html`
-17. **The Economics** — `deck/slides/cost-economics.html`
-18. **Live Demo** — `deck/slides/demo.html`
-19. **Now In VS Code** — `deck/slides/demo-vscode.html`
-20. **Lessons So Far** — `deck/slides/gotchas.html`
-21. **Where To Go Deeper** — `deck/slides/resources.html`
-22. **Thank You** — `deck/slides/thanks.html`
+12. **Beyond First Impressions** — `deck/slides/benchmarks.html`
+13. **Before You Pull a Model** — `deck/slides/hardware.html`
+14. **Picking a Model By Task** — `deck/slides/recommendations.html`
+15. **The Economics** — `deck/slides/cost-economics.html`
+16. **Live Demo** — `deck/slides/demo.html`
+17. **Now In VS Code** — `deck/slides/demo-vscode.html`
+18. **Lessons So Far** — `deck/slides/gotchas.html`
+19. **Where To Go Deeper** — `deck/slides/resources.html`
+20. **Thank You** — `deck/slides/thanks.html`
 
 ## Running the demo
 
@@ -74,17 +71,10 @@ ollama pull qwen3:14b
 ./demo/run-demo.sh
 ```
 
-The terminal portion compares the two models on the same prompt and isolates the
-`--nothink` flag. The VS Code portion asks each model for a hello world in Python —
+The terminal portion compares the two models on the same prompt. The VS Code portion
+asks each model for a hello world in Python —
 trivial on purpose, so the only things left to compare are time to first token and how
 much scaffolding each model adds.
-
-To make the no-thinking Qwen variant permanent:
-
-```bash
-ollama create qwen3-fast -f demo/Modelfile.qwen3-fast
-ollama run qwen3-fast
-```
 
 ## About the deck source
 
