@@ -1,0 +1,45 @@
+<section id="first-impressions" data-transition="fade" style="display:flex; flex-direction:column; gap:36px; justify-content:space-between; padding:128px 128px 150px; background:#ffffff">
+  <img src="/_blob/20b80b7a7b45cbaeea6bebc42db07f6c" alt="Peak ETL" style="position:absolute; top:48px; right:80px; width:190px">
+  <div style="display:flex; flex-direction:column">
+    <h1 style="font-family:Quicksand, Arial, sans-serif; font-size:52px; font-weight:500; line-height:1.1; color:#1a1a1a">First</h1>
+    <h2 style="font-family:Quicksand, Arial, sans-serif; font-size:52px; font-weight:700; line-height:1.1; color:#e62e8b">Impressions</h2>
+  </div>
+  <div style="display:flex; flex-direction:column; gap:16px">
+    <h3 style="width:1600px; font-family:Quicksand, Arial, sans-serif; font-size:46px; font-weight:600; line-height:1.25; color:#1a1a1a">Gemma 4 has felt noticeably more responsive than Qwen so far</h3>
+    <p style="width:1400px; font-family:'Nunito Sans', Arial, sans-serif; font-size:24px; line-height:1.5; color:#55595e">Same hardware, same VS Code connector, comparable prompts — Qwen consistently takes longer to produce a first token.</p>
+  </div>
+  <div style="display:flex; flex-direction:column; gap:14px">
+    <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:18px; letter-spacing:2px; text-transform:uppercase; color:#8a8f94">What the wait feels like</p>
+    <div style="display:flex; flex-direction:row; gap:24px; align-items:center">
+      <div style="width:320px; display:flex; flex-direction:column; gap:2px">
+        <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:23px; font-weight:600; color:#1a1a1a">Gemma 4</p>
+        <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:17px; color:#8a8f94">answers straight away</p>
+      </div>
+      <div style="width:380px; height:62px; display:flex; flex-direction:row; align-items:center; padding:0 20px; background:#27b4e8; border-radius:6px">
+        <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:19px; font-weight:600; color:#ffffff">answer streams</p>
+      </div>
+    </div>
+    <div style="display:flex; flex-direction:row; gap:24px; align-items:center">
+      <div style="width:320px; display:flex; flex-direction:column; gap:2px">
+        <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:23px; font-weight:600; color:#1a1a1a">Qwen</p>
+        <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:17px; color:#8a8f94">thinking on by default</p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:4px; align-items:center">
+        <div style="width:700px; height:62px; display:flex; flex-direction:row; align-items:center; padding:0 20px; background:#e62e8b; border-radius:6px 0 0 6px">
+          <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:19px; font-weight:600; color:#ffffff">reasoning block generated first (you see nothing yet)</p>
+        </div>
+        <div style="width:380px; height:62px; display:flex; flex-direction:row; align-items:center; padding:0 20px; background:#27b4e8; border-radius:0 6px 6px 0">
+          <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:19px; font-weight:600; color:#ffffff">answer streams</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex; flex-direction:row; gap:18px; align-items:center; padding:20px 28px; background:#f3eefb; border-left:5px solid #8257db; border-radius:12px">
+    <div style="position:relative; width:44px; height:44px; display:flex; flex-direction:column; align-self:stretch">
+      <x-shape kind="ellipse" style="width:44px; height:44px; background:#8257db"></x-shape>
+      <x-icon name="Lightbulb" style="position:absolute; top:11px; left:11px; width:22px; height:22px; color:#ffffff"></x-icon>
+    </div>
+    <p style="width:1450px; font-family:'Nunito Sans', Arial, sans-serif; font-size:22px; line-height:1.4; color:#1a1a1a">This is mostly about how the two models work, not raw speed: <b>Qwen ships with "thinking" mode on by default</b>, so it writes a reasoning block before the first visible token. Gemma 4 doesn't, so it feels faster even when throughput is comparable.</p>
+  </div>
+  <aside>Set up the mystery here before revealing the cause on the next two slides: it's very likely Qwen3's default "thinking" mode, not the model itself being slower per-token. The bars are schematic — the point is that the wait is front-loaded, before any visible output.</aside>
+</section>

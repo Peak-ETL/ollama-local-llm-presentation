@@ -1,0 +1,38 @@
+<section id="benchmarks" data-transition="fade" style="display:flex; flex-direction:column; gap:26px; justify-content:space-between; padding:128px 128px 150px; background:#ffffff">
+  <img src="/_blob/20b80b7a7b45cbaeea6bebc42db07f6c" alt="Peak ETL" style="position:absolute; top:48px; right:80px; width:190px">
+  <div style="display:flex; flex-direction:column; gap:14px">
+    <div style="display:flex; flex-direction:column">
+      <h1 style="font-family:Quicksand, Arial, sans-serif; font-size:52px; font-weight:500; line-height:1.1; color:#1a1a1a">Beyond First</h1>
+      <h2 style="font-family:Quicksand, Arial, sans-serif; font-size:52px; font-weight:700; line-height:1.1; color:#8257db">Impressions</h2>
+    </div>
+    <h3 style="width:1550px; padding:0 0 10px; font-family:Quicksand, Arial, sans-serif; font-size:30px; font-weight:600; color:#1a1a1a; border-bottom:2px solid #1a1a1a">What I ran, and what the bigger tags would need</h3>
+  </div>
+  <div style="display:flex; flex-direction:column; gap:12px">
+    <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:17px; letter-spacing:2px; text-transform:uppercase; color:#27b4e8">Tested on my machine</p>
+    <div style="display:flex; flex-direction:row; gap:24px">
+      <div style="display:flex; flex-direction:column; gap:6px; flex:1; padding:18px 24px; background:#eaf7fd; border-left:5px solid #27b4e8; border-radius:12px">
+        <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:24px; font-weight:700; color:#1a1a1a">gemma4:e4b</p>
+        <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:19px; color:#55595e">On-device class — the quick one</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px; flex:1; padding:18px 24px; background:#eaf7fd; border-left:5px solid #27b4e8; border-radius:12px">
+        <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:24px; font-weight:700; color:#1a1a1a">gemma4:12b</p>
+        <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:19px; color:#55595e">12B dense — no thinking mode</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px; flex:1; padding:18px 24px; background:#fdeff6; border-left:5px solid #e62e8b; border-radius:12px">
+        <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:24px; font-weight:700; color:#1a1a1a">qwen3:14b</p>
+        <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:19px; color:#55595e">14B dense — thinking on by default</p>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex; flex-direction:column; gap:12px">
+    <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:17px; letter-spacing:2px; text-transform:uppercase; color:#8257db">Bigger tags I haven't run — what they'd take</p>
+    <table style="font-family:'Nunito Sans', Arial, sans-serif; font-size:22px; color:#1a1a1a">
+      <tr style="background:#8257db"><th style="width:25%; color:#ffffff">Model</th><th style="width:16%; color:#ffffff">VRAM</th><th style="width:33%; color:#ffffff">Recommended GPU</th><th style="width:26%; color:#ffffff">Note</th></tr>
+      <tr style="background:#ffffff"><td>Gemma 4 31B</td><td>~20 GB</td><td>24 GB — RTX 3090 / 4090</td><td style="color:#55595e">Latency-friendly, native vision</td></tr>
+      <tr style="background:#f7f8f9"><td>Qwen 3.6 27B</td><td>~17 GB</td><td>24 GB — RTX 3090 / 4090</td><td style="color:#55595e">Leads raw coding benchmarks</td></tr>
+      <tr style="background:#ffffff"><td>Qwen 3.5 35B-A3B</td><td>~21 GB</td><td>24 GB+, or 32 GB Apple Silicon</td><td style="color:#55595e">3B active; fast for its size</td></tr>
+      <tr style="background:#f7f8f9"><td>Devstral 24B</td><td>~14 GB</td><td>16 GB — RTX 4080 / 4060 Ti 16 GB</td><td style="color:#55595e">Agentic coder at lower VRAM</td></tr>
+    </table>
+  </div>
+  <aside>Be explicit that these are two different things: the three tags I actually ran, and bigger models I have not. On the MoE row: "A3B" means ~3B active parameters per token, which buys speed — all 35B still have to fit in VRAM, so it is a ~21 GB model that runs like a much smaller one. Good place to ask the room what cards they have.</aside>
+</section>

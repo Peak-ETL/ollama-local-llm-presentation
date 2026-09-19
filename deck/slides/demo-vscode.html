@@ -1,0 +1,58 @@
+<section id="demo-vscode" data-transition="fade" style="display:flex; flex-direction:column; gap:28px; padding:128px 128px 150px; background:#ffffff">
+  <img src="/_blob/20b80b7a7b45cbaeea6bebc42db07f6c" alt="Peak ETL" style="position:absolute; top:48px; right:80px; width:190px">
+  <div style="display:flex; flex-direction:column; gap:16px">
+    <div style="display:flex; flex-direction:column">
+      <h1 style="font-family:Quicksand, Arial, sans-serif; font-size:52px; font-weight:500; line-height:1.1; color:#1a1a1a">Now In</h1>
+      <h2 style="font-family:Quicksand, Arial, sans-serif; font-size:52px; font-weight:700; line-height:1.1; color:#27b4e8">VS Code</h2>
+    </div>
+    <h3 style="width:1550px; padding:0 0 10px; font-family:Quicksand, Arial, sans-serif; font-size:30px; font-weight:600; color:#1a1a1a; border-bottom:2px solid #1a1a1a">Same ask, both models: a hello world in Python</h3>
+  </div>
+  <div style="display:flex; flex-direction:row; gap:40px; flex:1">
+    <div style="display:flex; flex-direction:column; gap:16px; flex:1">
+      <div style="display:flex; flex-direction:row; gap:20px; align-items:center; flex:1; padding:20px 28px; background:#eaf7fd; border-left:5px solid #27b4e8; border-radius:12px">
+        <div style="position:relative; width:58px; height:58px; display:flex; flex-direction:column; align-self:stretch">
+          <x-shape kind="ellipse" style="width:58px; height:58px; background:#27b4e8"></x-shape>
+          <x-icon name="Settings" style="position:absolute; top:15px; left:15px; width:28px; height:28px; color:#ffffff"></x-icon>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:3px">
+          <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:27px; font-weight:600; color:#1a1a1a">Pick the model in the connector</h3>
+          <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:20px; color:#55595e">Same editor, same file — just swap what's behind it</p>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:20px; align-items:center; flex:1; padding:20px 28px; background:#eef2fe; border-left:5px solid #3e5fe0; border-radius:12px">
+        <div style="position:relative; width:58px; height:58px; display:flex; flex-direction:column; align-self:stretch">
+          <x-shape kind="ellipse" style="width:58px; height:58px; background:#3e5fe0"></x-shape>
+          <x-icon name="Chat" style="position:absolute; top:15px; left:15px; width:28px; height:28px; color:#ffffff"></x-icon>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:3px">
+          <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:27px; font-weight:600; color:#1a1a1a">Ask each one for hello world</h3>
+          <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:20px; color:#55595e">gemma4:12b first, then qwen3:14b</p>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:20px; align-items:center; flex:1; padding:20px 28px; background:#fdeff6; border-left:5px solid #e62e8b; border-radius:12px">
+        <div style="position:relative; width:58px; height:58px; display:flex; flex-direction:column; align-self:stretch">
+          <x-shape kind="ellipse" style="width:58px; height:58px; background:#e62e8b"></x-shape>
+          <x-icon name="Clock" style="position:absolute; top:15px; left:15px; width:28px; height:28px; color:#ffffff"></x-icon>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:3px">
+          <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:27px; font-weight:600; color:#1a1a1a">Compare what comes back</h3>
+          <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:20px; color:#55595e">Time to first token, and how much each writes around it</p>
+        </div>
+      </div>
+    </div>
+    <div style="width:720px; display:flex; flex-direction:column; gap:20px; justify-content:center; padding:32px 36px; background:#1a1a1a; border-radius:12px">
+      <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:16px; letter-spacing:2px; text-transform:uppercase; color:#8a8f94">The ask</p>
+      <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:21px; line-height:1.5; color:#ffffff">&gt; write a hello world program in python</p>
+      <div style="display:flex; flex-direction:column; gap:4px; padding:8px 0 0">
+        <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:17px; color:#6a7179"># the entire correct answer</p>
+        <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:23px; line-height:1.6; color:#7fe0a3">print("Hello, World!")</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:3px">
+        <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:17px; line-height:1.5; color:#6a7179"># everything past this line is the model's choice:</p>
+        <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:17px; line-height:1.5; color:#6a7179"># comments, a main guard, imports, extra code paths</p>
+        <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:17px; line-height:1.5; color:#6a7179"># it varies by model, not by prompt</p>
+      </div>
+    </div>
+  </div>
+  <aside>Hello world is deliberately trivial: nobody argues about whether the output is correct, so the room watches the two things that actually differ day to day — time to first token, and how much each model writes around the one line that matters. Expect comments, a main guard, unnecessary imports, or extra code paths and error handling depending on which model answers; that is a property of the model, not of how the prompt was worded. Switch the model in the connector live so they see it is the same editor and file throughout. If autocomplete is cooperating, type the first few characters and let it finish the line instead of using chat.</aside>
+</section>

@@ -1,0 +1,50 @@
+<section id="recommendations" data-transition="fade" style="background:#ffffff">
+  <img src="/_blob/20b80b7a7b45cbaeea6bebc42db07f6c" alt="Peak ETL" style="position:absolute; top:48px; right:80px; width:190px">
+  <div id="7563748b" style="position:absolute; top:128px; left:128px; width:1664px; height:178px; display:flex; flex-direction:column; gap:16px">
+    <div style="display:flex; flex-direction:column">
+      <h1 style="font-family:Quicksand, Arial, sans-serif; font-size:52px; font-weight:500; line-height:1.1; color:#1a1a1a">Picking a Model</h1>
+      <h2 style="font-family:Quicksand, Arial, sans-serif; font-size:52px; font-weight:700; line-height:1.1; color:#27b4e8">By Task</h2>
+    </div>
+    <h3 style="width:1550px; padding:0 0 10px; font-family:Quicksand, Arial, sans-serif; font-size:30px; font-weight:600; color:#1a1a1a; border-bottom:2px solid #1a1a1a">There's no single "best" local model — match it to the job</h3>
+  </div>
+  <div id="fe598b4d" style="position:absolute; top:436px; left:128px; width:1664px; height:88px; display:flex; flex-direction:column; gap:10px">
+    <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:17px; letter-spacing:2px; text-transform:uppercase; color:#8a8f94">How long the task can wait</p>
+    <div style="height:16px; display:flex; flex-direction:column; background:linear-gradient(90deg, #27b4e8 0%, #3e5fe0 50%, #e62e8b 100%); border-radius:8px">
+    </div>
+    <div style="display:flex; flex-direction:row; gap:32px">
+      <p style="flex:1; font-family:'Nunito Sans', Arial, sans-serif; font-size:20px; font-weight:600; color:#27b4e8">Sub-second, or it's noise</p>
+      <p style="flex:1; font-family:'Nunito Sans', Arial, sans-serif; font-size:20px; font-weight:600; text-align:center; color:#3e5fe0">A few seconds is fine</p>
+      <p style="flex:1; font-family:'Nunito Sans', Arial, sans-serif; font-size:20px; font-weight:600; text-align:right; color:#e62e8b">Minutes are fine</p>
+    </div>
+  </div>
+  <div id="9434de08" style="position:absolute; top:654px; left:128px; width:1664px; height:276px; display:flex; flex-direction:row; gap:32px">
+    <div style="display:flex; flex-direction:column; gap:14px; flex:1; padding:20px 0 0; border-top:3px solid #27b4e8">
+      <div style="position:relative; width:60px; height:60px; display:flex; flex-direction:column; align-self:stretch">
+        <x-shape kind="ellipse" style="width:60px; height:60px; background:#27b4e8"></x-shape>
+        <x-icon name="Lightning" style="position:absolute; top:16px; left:16px; width:28px; height:28px; color:#ffffff"></x-icon>
+      </div>
+      <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:27px; font-weight:600; color:#1a1a1a">Inline autocomplete</h3>
+      <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:21px; line-height:1.5; color:#4a4a4a">Small, fast, non-thinking. A 1.5B–4B FIM-capable model beats anything that pauses to reason.</p>
+      <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:18px; color:#27b4e8">thinking: off · qwen2.5-coder:1.5b</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:14px; flex:1; padding:20px 0 0; border-top:3px solid #3e5fe0">
+      <div style="position:relative; width:60px; height:60px; display:flex; flex-direction:column; align-self:stretch">
+        <x-shape kind="ellipse" style="width:60px; height:60px; background:#3e5fe0"></x-shape>
+        <x-icon name="Chat" style="position:absolute; top:16px; left:16px; width:28px; height:28px; color:#ffffff"></x-icon>
+      </div>
+      <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:27px; font-weight:600; color:#1a1a1a">In-editor chat</h3>
+      <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:21px; line-height:1.5; color:#4a4a4a">Gemma 4 for snappy back-and-forth, it's the one that felt quickest on my box. Keep thinking off unless the question is genuinely hard.</p>
+      <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:18px; color:#3e5fe0">thinking: off · gemma4:12b</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:14px; flex:1; padding:20px 0 0; border-top:3px solid #e62e8b">
+      <div style="position:relative; width:60px; height:60px; display:flex; flex-direction:column; align-self:stretch">
+        <x-shape kind="ellipse" style="width:60px; height:60px; background:#e62e8b"></x-shape>
+        <x-icon name="Tool" style="position:absolute; top:16px; left:16px; width:28px; height:28px; color:#ffffff"></x-icon>
+      </div>
+      <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:27px; font-weight:600; color:#1a1a1a">Agentic / multi-step</h3>
+      <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:21px; line-height:1.5; color:#4a4a4a">Bigger coder models earn their latency here; this is the one case where thinking mode pays off.</p>
+      <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:18px; color:#e62e8b">thinking: on · qwen3-coder:30b</p>
+    </div>
+  </div>
+  <aside>This is the framework I'd want the team to walk away with: pick the model to match the latency tolerance of the task, not just "the best benchmark score." Note the agentic column needs more GPU than I have — that one is a recommendation from the published numbers, not from my own runs.</aside>
+</section>

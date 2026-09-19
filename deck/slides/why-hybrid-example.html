@@ -1,0 +1,44 @@
+<section id="why-hybrid-example" data-transition="fade" style="display:flex; flex-direction:column; gap:32px; justify-content:space-between; padding:128px 128px 140px; background:#ffffff">
+  <img src="/_blob/20b80b7a7b45cbaeea6bebc42db07f6c" alt="Peak ETL" style="position:absolute; top:48px; right:80px; width:190px">
+  <div style="display:flex; flex-direction:column; gap:16px">
+    <div style="display:flex; flex-direction:column">
+      <h1 style="font-family:Quicksand, Arial, sans-serif; font-size:52px; font-weight:500; line-height:1.1; color:#1a1a1a">A Hybrid</h1>
+      <h2 style="font-family:Quicksand, Arial, sans-serif; font-size:52px; font-weight:700; line-height:1.1; color:#27b4e8">Split, In Practice</h2>
+    </div>
+    <h3 style="width:1550px; padding:0 0 10px; font-family:Quicksand, Arial, sans-serif; font-size:32px; font-weight:600; color:#1a1a1a; border-bottom:2px solid #1a1a1a">Route by sensitivity, not by tool</h3>
+  </div>
+  <div style="display:flex; flex-direction:row; gap:32px">
+    <div style="display:flex; flex-direction:column; gap:22px; flex:1; padding:36px 40px; background:#eaf7fd; border-radius:12px">
+      <div style="display:flex; flex-direction:row; gap:18px; align-items:center">
+        <div style="position:relative; width:56px; height:56px; display:flex; flex-direction:column; align-self:stretch">
+          <x-shape kind="ellipse" style="width:56px; height:56px; background:#27b4e8"></x-shape>
+          <x-icon name="Lock" style="position:absolute; top:15px; left:15px; width:26px; height:26px; color:#ffffff"></x-icon>
+        </div>
+        <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:30px; font-weight:700; color:#1a1a1a">Stays local</h3>
+      </div>
+      <ul style="font-family:'Nunito Sans', Arial, sans-serif; font-size:22px; line-height:1.7; color:#4a4a4a">
+        <li>Proprietary source code and internal architecture</li>
+        <li>Customer data, PII, or anything under NDA</li>
+        <li>Secrets, credentials, and internal API contracts</li>
+        <li>Regulated data (health, financial, government)</li>
+      </ul>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:22px; flex:1; padding:36px 40px; background:#fdeff6; border-radius:12px">
+      <div style="display:flex; flex-direction:row; gap:18px; align-items:center">
+        <div style="position:relative; width:56px; height:56px; display:flex; flex-direction:column; align-self:stretch">
+          <x-shape kind="ellipse" style="width:56px; height:56px; background:#e62e8b"></x-shape>
+          <x-icon name="Cloud" style="position:absolute; top:15px; left:15px; width:26px; height:26px; color:#ffffff"></x-icon>
+        </div>
+        <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:30px; font-weight:700; color:#1a1a1a">Fine for a hosted model</h3>
+      </div>
+      <ul style="font-family:'Nunito Sans', Arial, sans-serif; font-size:22px; line-height:1.7; color:#4a4a4a">
+        <li>Public docs, open-source code, and boilerplate</li>
+        <li>General "how do I..." and library/API questions</li>
+        <li>Public-facing marketing or support copy</li>
+        <li>Anything already published or open-source licensed</li>
+      </ul>
+    </div>
+  </div>
+  <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:23px; font-weight:600; color:#1a1a1a">Ollama itself doesn't decide this for you, it dispatches by which model tag you pick, not by reading what's in the prompt. The gate has to be a team norm, or a proxy layer we build in front of it, open-source options like LiteLLM or Occludra Gateway exist, out of scope for today.</p>
+  <aside>Concrete example for orgs with mixed sensitivity: keep the local model as the default for anything touching the codebase or customer data, and let hosted/cloud models handle general questions and public content where the bigger, non-local models pay off. If asked "can Ollama enforce this": no — it routes by which model tag you pick (including its own :cloud tags), not by reading the prompt. LiteLLM (open-source proxy, supports Ollama plus ~100 cloud providers, tag-based routing rules) and Occludra Gateway (open-source PII/secret redaction and prompt-injection blocking) are the tools I'd point to if someone wants to go build this — worth its own session, not this one.</aside>
+</section>

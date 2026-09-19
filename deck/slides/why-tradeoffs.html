@@ -1,0 +1,57 @@
+<section id="why-tradeoffs" data-transition="fade" style="display:flex; flex-direction:column; gap:28px; justify-content:space-between; padding:128px 128px 140px; background:#ffffff">
+  <img src="/_blob/20b80b7a7b45cbaeea6bebc42db07f6c" alt="Peak ETL" style="position:absolute; top:48px; right:80px; width:190px">
+  <div style="display:flex; flex-direction:column; gap:14px">
+    <div style="display:flex; flex-direction:column">
+      <h1 style="font-family:Quicksand, Arial, sans-serif; font-size:52px; font-weight:500; line-height:1.1; color:#1a1a1a">The Honest</h1>
+      <h2 style="font-family:Quicksand, Arial, sans-serif; font-size:52px; font-weight:700; line-height:1.1; color:#e62e8b">Tradeoffs</h2>
+    </div>
+    <h3 style="width:1550px; padding:0 0 10px; font-family:Quicksand, Arial, sans-serif; font-size:32px; font-weight:600; color:#1a1a1a; border-bottom:2px solid #1a1a1a">Self-hosting can reduce the cost — it never removes it</h3>
+    <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:22px; line-height:1.4; color:#55595e">This isn't specific to Ollama — it's true of any open-source, self-hosted setup.</p>
+  </div>
+  <div style="display:flex; flex-direction:column; gap:14px">
+    <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:18px; letter-spacing:2px; text-transform:uppercase; color:#8a8f94">Where the money goes — illustrative</p>
+    <div style="display:flex; flex-direction:row; gap:24px; align-items:center">
+      <p style="width:230px; font-family:'Nunito Sans', Arial, sans-serif; font-size:23px; font-weight:600; color:#1a1a1a">Hosted</p>
+      <div style="display:flex; flex-direction:row; align-items:center">
+        <div style="width:980px; height:56px; display:flex; flex-direction:row; align-items:center; padding:0 20px; background:#e62e8b; border-radius:6px 0 0 6px">
+          <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:19px; font-weight:600; color:#ffffff">Per-token API spend: grows with every prompt, frontier models burn more</p>
+        </div>
+        <x-shape kind="arrow-right" style="width:90px; height:56px; background:#e62e8b"></x-shape>
+      </div>
+      <div style="width:290px; display:flex; flex-direction:column; gap:2px">
+        <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:18px; font-weight:700; color:#e62e8b">...and never stops</p>
+        <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:17px; color:#8a8f94">the provider sets the rate, not you</p>
+      </div>
+    </div>
+    <div style="display:flex; flex-direction:row; gap:24px; align-items:center">
+      <p style="width:230px; font-family:'Nunito Sans', Arial, sans-serif; font-size:23px; font-weight:600; color:#1a1a1a">Self-hosted</p>
+      <div style="display:flex; flex-direction:row; gap:6px; align-items:center">
+        <div style="width:360px; height:56px; display:flex; flex-direction:row; align-items:center; padding:0 20px; background:#3e5fe0; border-radius:6px 0 0 6px">
+          <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:19px; font-weight:600; color:#ffffff">GPUs, hardware</p>
+        </div>
+        <div style="width:440px; height:56px; display:flex; flex-direction:row; align-items:center; padding:0 20px; background:#8257db">
+          <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:19px; font-weight:600; color:#ffffff">Setup, security, upkeep</p>
+        </div>
+        <div style="width:140px; height:56px; display:flex; flex-direction:row; align-items:center; padding:0 20px; background:#c9cdd2; border-radius:0 6px 6px 0">
+          <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:19px; font-weight:600; color:#1a1a1a">Power</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex; flex-direction:row; gap:32px">
+    <div style="display:flex; flex-direction:column; gap:12px; flex:1; padding:18px 0 0; border-top:3px solid #27b4e8">
+      <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:26px; font-weight:600; color:#1a1a1a">Tokens become expertise</h3>
+      <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:21px; line-height:1.5; color:#4a4a4a">You trade a per-token bill for the time and skill to set up, secure, and keep patched a system you now own end to end.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:12px; flex:1; padding:18px 0 0; border-top:3px solid #3e5fe0">
+      <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:26px; font-weight:600; color:#1a1a1a">Hardware ages fast</h3>
+      <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:21px; line-height:1.5; color:#4a4a4a">Each new model generation wants more VRAM. A GPU that felt generous a year ago can fall behind what the best local models need next.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:12px; flex:1; padding:18px 0 0; border-top:3px solid #8257db">
+      <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:26px; font-weight:600; color:#1a1a1a">Scale means more GPUs</h3>
+      <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:21px; line-height:1.5; color:#4a4a4a">One GPU on one desk is fine for one developer. Serving a team means real concurrency; a GPU fleet and the upfront capital cost that comes with it.</p>
+    </div>
+  </div>
+  <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:23px; font-weight:600; color:#1a1a1a">For these reasons, every individual and organization will have to find their own sweet spot between local and hosted models.</p>
+  <aside>Balance the pitch here — this is the slide where I'd rather the skeptics in the room interrupt than stay quiet. The bars make the point: the spend doesn't vanish, it changes shape, and a chunk of it becomes people's time rather than a line item.</aside>
+</section>

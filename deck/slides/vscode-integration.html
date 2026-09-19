@@ -1,0 +1,43 @@
+<section id="vscode-integration" data-transition="fade" style="display:flex; flex-direction:column; gap:36px; justify-content:space-between; padding:128px 128px 150px; background:#ffffff">
+  <img src="/_blob/20b80b7a7b45cbaeea6bebc42db07f6c" alt="Peak ETL" style="position:absolute; top:48px; right:80px; width:190px">
+  <div style="display:flex; flex-direction:column">
+    <h1 style="font-family:Quicksand, Arial, sans-serif; font-size:52px; font-weight:500; line-height:1.1; color:#1a1a1a">How It</h1>
+    <h2 style="font-family:Quicksand, Arial, sans-serif; font-size:52px; font-weight:700; line-height:1.1; color:#8257db">Connects</h2>
+  </div>
+  <div style="display:flex; flex-direction:column; gap:18px; padding:24px 32px 32px; border:2px solid #d9dcde; border-radius:16px">
+    <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:17px; letter-spacing:2px; text-transform:uppercase; color:#8a8f94">Your machine</p>
+    <div style="display:flex; flex-direction:row; gap:20px; align-items:center">
+      <div style="display:flex; flex-direction:column; gap:12px; flex:1; padding:26px 28px; background:#ffffff; border:3px solid #3e5fe0; border-radius:12px">
+        <div style="position:relative; width:52px; height:52px; display:flex; flex-direction:column; align-self:stretch">
+          <x-shape kind="ellipse" style="width:52px; height:52px; background:#3e5fe0"></x-shape>
+          <x-icon name="Code" style="position:absolute; top:14px; left:14px; width:24px; height:24px; color:#ffffff"></x-icon>
+        </div>
+        <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:27px; font-weight:600; color:#1a1a1a">VS Code</h3>
+        <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:20px; line-height:1.4; color:#55595e">Ollama connector + editor</p>
+      </div>
+      <x-shape kind="arrow-right" style="width:70px; height:34px; background:#c9cdd2"></x-shape>
+      <div style="display:flex; flex-direction:column; gap:12px; flex:1; padding:26px 28px; background:#27b4e8; border-radius:12px">
+        <div style="position:relative; width:52px; height:52px; display:flex; flex-direction:column; align-self:stretch">
+          <x-shape kind="ellipse" style="width:52px; height:52px; background:#ffffff"></x-shape>
+          <x-icon name="Globe" style="position:absolute; top:14px; left:14px; width:24px; height:24px; color:#27b4e8"></x-icon>
+        </div>
+        <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:27px; font-weight:600; color:#ffffff">Ollama server</h3>
+        <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:20px; line-height:1.4; color:#ffffff">localhost:11434 — REST API</p>
+      </div>
+      <x-shape kind="arrow-right" style="width:70px; height:34px; background:#c9cdd2"></x-shape>
+      <div style="display:flex; flex-direction:column; gap:12px; flex:1; padding:26px 28px; background:#8257db; border-radius:12px">
+        <div style="position:relative; width:52px; height:52px; display:flex; flex-direction:column; align-self:stretch">
+          <x-shape kind="ellipse" style="width:52px; height:52px; background:#ffffff"></x-shape>
+          <x-icon name="Database" style="position:absolute; top:14px; left:14px; width:24px; height:24px; color:#8257db"></x-icon>
+        </div>
+        <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:27px; font-weight:600; color:#ffffff">Local model</h3>
+        <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:20px; line-height:1.4; color:#ffffff">Gemma 4 or Qwen, in memory</p>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex; flex-direction:column; gap:10px">
+    <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:23px; font-weight:600; color:#1a1a1a">Nothing here calls out to the internet; the whole loop stays on one machine.</p>
+    <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:21px; color:#8a8f94">That same REST API is just as usable outside VS Code — internal chatbots, doc lookups, other tools — out of scope for today.</p>
+  </div>
+  <aside>Ollama exposes an OpenAI-compatible-ish REST API on localhost:11434. The VS Code extension is just an HTTP client against that endpoint — same pattern as Continue, Copilot's BYOK Ollama support, etc. Worth a one-liner: any internal app can hit that same API directly (an internal chatbot, a docs lookup tool, a Slack bot) — not just editors. That's a separate talk.</aside>
+</section>

@@ -1,0 +1,74 @@
+{
+  "v": 4,
+  "attachments": {},
+  "createdOnFiles": {
+    "at": "2026-09-19T18:35:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "faces": {
+    "jetbrains-mono": {
+      "family": "JetBrains Mono",
+      "href": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
+    },
+    "nunito-sans": {
+      "family": "Nunito Sans",
+      "href": "https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap"
+    },
+    "quicksand": {
+      "family": "Quicksand",
+      "href": "https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap"
+    }
+  },
+  "order": [
+    "cover",
+    "about-me",
+    "agenda",
+    "what-is-ollama",
+    "why-cost",
+    "why-privacy",
+    "why-tradeoffs",
+    "why-hybrid-example",
+    "setup-recap",
+    "vscode-integration",
+    "first-impressions",
+    "thinking-issue",
+    "thinking-fix",
+    "benchmarks",
+    "hardware",
+    "recommendations",
+    "cost-economics",
+    "demo",
+    "demo-vscode",
+    "gotchas",
+    "resources",
+    "thanks"
+  ],
+  "sections": {
+    "s-bench": {
+      "description": "Benchmarks, hardware needs, and picking a model per task",
+      "start": "benchmarks"
+    },
+    "s-eval": {
+      "description": "Gemma 4 vs Qwen, and fixing the thinking-mode latency gotcha",
+      "start": "first-impressions"
+    },
+    "s-setup": {
+      "description": "What's already installed and how VS Code talks to Ollama",
+      "start": "setup-recap"
+    },
+    "s-what": {
+      "description": "What Ollama is, how it works, and why use it over raw llama.cpp",
+      "start": "what-is-ollama"
+    },
+    "s-why": {
+      "description": "Why go local: cost, privacy, the honest tradeoffs, and what a hybrid split looks like",
+      "start": "why-cost"
+    },
+    "s-wrap": {
+      "description": "Live demo in the terminal and in VS Code, lessons learned, and where to go next",
+      "start": "demo"
+    }
+  },
+  "title": "Local LLMs for Coding with Ollama"
+}

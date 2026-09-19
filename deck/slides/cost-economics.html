@@ -1,0 +1,48 @@
+<section id="cost-economics" data-transition="fade" style="display:flex; flex-direction:column; gap:30px; justify-content:space-between; padding:128px 128px 150px; background:#ffffff">
+  <img src="/_blob/20b80b7a7b45cbaeea6bebc42db07f6c" alt="Peak ETL" style="position:absolute; top:48px; right:80px; width:190px">
+  <div style="display:flex; flex-direction:column; gap:16px">
+    <div style="display:flex; flex-direction:column">
+      <h1 style="font-family:Quicksand, Arial, sans-serif; font-size:52px; font-weight:500; line-height:1.1; color:#1a1a1a">The</h1>
+      <h2 style="font-family:Quicksand, Arial, sans-serif; font-size:52px; font-weight:700; line-height:1.1; color:#3e5fe0">Economics</h2>
+    </div>
+    <h3 style="width:1550px; padding:0 0 10px; font-family:Quicksand, Arial, sans-serif; font-size:30px; font-weight:600; color:#1a1a1a; border-bottom:2px solid #1a1a1a">Cloud cost scales with every prompt — local cost steps with each hardware refresh</h3>
+  </div>
+  <div style="display:flex; flex-direction:row; gap:40px">
+    <div style="width:940px; display:flex; flex-direction:column; gap:10px">
+      <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:17px; letter-spacing:2px; text-transform:uppercase; color:#8a8f94">Cost vs usage — schematic, no real numbers</p>
+      <div style="position:relative; width:940px; height:330px; display:flex; flex-direction:column; align-self:stretch">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 330" aria-label="Schematic chart: cloud cost rises steadily with usage, while local cost starts with an upfront hardware purchase and then steps up again at each GPU refresh. The two lines cross at a break-even point that depends on your volume." style="width:940px; height:330px">
+          <line x1="70" y1="20" x2="70" y2="280" stroke="#D9DCDE" stroke-width="3"/>
+          <line x1="70" y1="280" x2="910" y2="280" stroke="#D9DCDE" stroke-width="3"/>
+          <line x1="513" y1="30" x2="513" y2="280" stroke="#C9CDD2" stroke-width="3" stroke-dasharray="9 9"/>
+          <path d="M70 272 L910 40" stroke="#E62E8B" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <path d="M70 272 L70 180 L350 176 L350 152 L630 148 L630 124 L910 120" stroke="#27B4E8" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="513" cy="150" r="10" fill="#1A1A1A"/>
+        </svg>
+        <p style="position:absolute; top:44px; left:96px; width:300px; font-family:'Nunito Sans', Arial, sans-serif; font-size:19px; line-height:1.4; color:#55595e">Break-even depends entirely on your own volume</p>
+        <p style="position:absolute; top:26px; left:600px; width:300px; font-family:'Nunito Sans', Arial, sans-serif; font-size:21px; font-weight:700; color:#e62e8b">Cloud — grows with usage</p>
+        <p style="position:absolute; top:196px; left:620px; width:300px; font-family:'Nunito Sans', Arial, sans-serif; font-size:21px; font-weight:700; color:#27b4e8">Local — steps at each GPU refresh</p>
+        <p style="position:absolute; top:196px; left:92px; width:200px; font-family:'Nunito Sans', Arial, sans-serif; font-size:18px; color:#8a8f94">upfront spend</p>
+        <p style="position:absolute; top:290px; left:790px; width:140px; font-family:'Nunito Sans', Arial, sans-serif; font-size:18px; color:#8a8f94">usage</p>
+      </div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:20px; justify-content:center; flex:1">
+      <div style="display:flex; flex-direction:column; gap:10px; padding:26px 30px; background:#fdeff6; border-left:5px solid #e62e8b; border-radius:12px">
+        <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:27px; font-weight:600; color:#1a1a1a">Cloud API</h3>
+        <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:21px; line-height:1.5; color:#4a4a4a">cost ≈ tokens used × price per token. Agent tool calls and long-context re-reads multiply the bill as usage grows.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:10px; padding:26px 30px; background:#eaf7fd; border-left:5px solid #27b4e8; border-radius:12px">
+        <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:27px; font-weight:600; color:#1a1a1a">Local (Ollama)</h3>
+        <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:21px; line-height:1.5; color:#4a4a4a">cost ≈ hardware + electricity. Volume stops being the scary variable, but keeping pace with the largest models means a GPU refresh roughly year over year, not a one-time buy.</p>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex; flex-direction:row; gap:18px; align-items:center; padding:20px 28px; background:#eef2fe; border-left:5px solid #3e5fe0; border-radius:12px">
+    <div style="position:relative; width:44px; height:44px; display:flex; flex-direction:column; align-self:stretch">
+      <x-shape kind="ellipse" style="width:44px; height:44px; background:#3e5fe0"></x-shape>
+      <x-icon name="Chart" style="position:absolute; top:11px; left:11px; width:22px; height:22px; color:#ffffff"></x-icon>
+    </div>
+    <p style="width:1450px; font-family:'Nunito Sans', Arial, sans-serif; font-size:22px; line-height:1.4; color:#1a1a1a">Weigh the cost of your token volume against the cost of GPU upgrades.</p>
+  </div>
+  <aside>Deliberately no dollar figures — the chart has no axis numbers on purpose. Pull our real usage from the team's API bills before putting a specific ROI claim in front of anyone. The honest answer to "when does local win?" is "depends on your volume", and the crossing point is the whole story. Call out the steps in the cyan line: if you want to stay on the biggest models, the GPU spend recurs roughly annually — it flattens only if you are happy to sit on the hardware you have.</aside>
+</section>

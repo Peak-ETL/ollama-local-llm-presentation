@@ -1,0 +1,65 @@
+<section id="demo" data-transition="fade" style="display:flex; flex-direction:column; gap:28px; padding:128px 128px 150px; background:#ffffff">
+  <img src="/_blob/20b80b7a7b45cbaeea6bebc42db07f6c" alt="Peak ETL" style="position:absolute; top:48px; right:80px; width:190px">
+  <div style="display:flex; flex-direction:column; gap:16px">
+    <div style="display:flex; flex-direction:column">
+      <h1 style="font-family:Quicksand, Arial, sans-serif; font-size:52px; font-weight:500; line-height:1.1; color:#1a1a1a">Live</h1>
+      <h2 style="font-family:Quicksand, Arial, sans-serif; font-size:52px; font-weight:700; line-height:1.1; color:#8257db">Demo</h2>
+    </div>
+    <h3 style="width:1550px; padding:0 0 10px; font-family:Quicksand, Arial, sans-serif; font-size:30px; font-weight:600; color:#1a1a1a; border-bottom:2px solid #1a1a1a">Watch the local LLM in action</h3>
+  </div>
+  <div style="display:flex; flex-direction:row; gap:40px; flex:1">
+    <div style="display:flex; flex-direction:column; gap:16px; flex:1">
+      <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:17px; letter-spacing:2px; text-transform:uppercase; color:#27b4e8">In the terminal</p>
+      <div style="display:flex; flex-direction:row; gap:20px; align-items:center; flex:1; padding:20px 28px; background:#eaf7fd; border-left:5px solid #27b4e8; border-radius:12px">
+        <div style="position:relative; width:58px; height:58px; display:flex; flex-direction:column; align-self:stretch">
+          <x-shape kind="ellipse" style="width:58px; height:58px; background:#27b4e8"></x-shape>
+          <x-icon name="Activity" style="position:absolute; top:15px; left:15px; width:28px; height:28px; color:#ffffff"></x-icon>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:3px">
+          <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:27px; font-weight:600; color:#1a1a1a">Same prompt, both models</h3>
+          <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:20px; color:#55595e">Nothing in the way but the model itself</p>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:20px; align-items:center; flex:1; padding:20px 28px; background:#fdeff6; border-left:5px solid #e62e8b; border-radius:12px">
+        <div style="position:relative; width:58px; height:58px; display:flex; flex-direction:column; align-self:stretch">
+          <x-shape kind="ellipse" style="width:58px; height:58px; background:#e62e8b"></x-shape>
+          <x-icon name="Clock" style="position:absolute; top:15px; left:15px; width:28px; height:28px; color:#ffffff"></x-icon>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:3px">
+          <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:27px; font-weight:600; color:#1a1a1a">Qwen with and without --nothink</h3>
+          <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:20px; color:#55595e">The latency gap, isolated to one flag</p>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:20px; align-items:center; flex:1; padding:20px 28px; background:#f7f8f9; border-left:5px solid #8a8f94; border-radius:12px">
+        <div style="position:relative; width:58px; height:58px; display:flex; flex-direction:column; align-self:stretch">
+          <x-shape kind="ellipse" style="width:58px; height:58px; background:#8a8f94"></x-shape>
+          <x-icon name="Database" style="position:absolute; top:15px; left:15px; width:28px; height:28px; color:#ffffff"></x-icon>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:3px">
+          <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:27px; font-weight:600; color:#1a1a1a">ollama ps ~ what's loaded</h3>
+          <p style="font-family:'Nunito Sans', Arial, sans-serif; font-size:20px; color:#55595e">And what switching models costs</p>
+        </div>
+      </div>
+    </div>
+    <div style="width:720px; display:flex; flex-direction:column; gap:18px; justify-content:center; padding:32px 36px; background:#1a1a1a; border-radius:12px">
+      <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:16px; letter-spacing:2px; text-transform:uppercase; color:#8a8f94">Running today</p>
+      <div style="display:flex; flex-direction:column; gap:2px">
+        <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:17px; color:#6a7179"># the baseline</p>
+        <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:21px; color:#7fe0a3">$ ollama run gemma4:12b</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:2px">
+        <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:17px; color:#6a7179"># thinking on by default</p>
+        <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:21px; color:#7fe0a3">$ ollama run qwen3:14b</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:2px">
+        <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:17px; color:#6a7179"># same prompt, one flag different</p>
+        <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:21px; color:#7fe0a3">$ ollama run qwen3:14b --nothink</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:2px">
+        <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:17px; color:#6a7179"># what's resident, and for how long</p>
+        <p style="font-family:'JetBrains Mono', 'Courier New', monospace; font-size:21px; color:#7fe0a3">$ ollama ps</p>
+      </div>
+    </div>
+  </div>
+  <aside>Terminal first on purpose: same prompt, same machine, one flag between the two runs — no editor, extension settings or network in the way, so the comparison is honest and the --nothink toggle is obvious. Watch the gap before the first token; that is the argument from a few slides ago, live. If a model is slow to load, talk over it — that wait is itself the point. Fallback if the demo breaks: the screenshots on the setup slide. VS Code comes after this, once the difference is clear.</aside>
+</section>
